@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voice of Freedom</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            margin-left: 10vw; /* 10% of the viewport width as left margin */
+            margin-right: 10vw; /* 10% of the viewport width as right margin */
+        }
+
+        header, nav, section, footer {
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1em;
+        }
+
+        nav {
+            background-color: #444;
+            color: #fff;
+            padding: 0.5em;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 0 10px;
+        }
+
+        nav a.active {
+            background-color: white;
+            color: #333;
+        }
+
+        section {
+            padding: 1em;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .centered-image-container {
+            max-width: 100%;
+            position: relative;
+        }
+
+        .centered-image {
+            max-width: 100%;
+            max-height: 100%;
+            display: block;
+            margin: auto;
+        }
+
+        .centered-text-box {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Voice of Freedom</h1>
+    </header>
+
+    <nav>
+        <a href="maintry.html" id="homeLink">Home</a> |
+        <a href="newstry.html" id="newsLink">News</a> |
+        <a href="aboutus.html" id="aboutUsLink">About Us</a> |
+    </nav>
+
+    <section>
+        <!-- Add your image here -->
+        <div class="centered-image-container">
+            <img src="Ata.jpeg" alt="Centered Image" class="centered-image">
+        </div>
+        
+        <!-- Add your text box here as a quote with attribution -->
+        <blockquote class="centered-text-box">
+            <p>The press is the common voice of the people.</p>
+            <cite>- Mustafa Kemal Atatürk</cite>
+        </blockquote>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Voice of Freedom. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
