@@ -5,8 +5,108 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Voice of Freedom</title>
     <style>
-        /* Your existing styles remain unchanged */
-        /* ... */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            transition: background-color 0.3s ease; /* Add a transition for the body background color */
+            margin-left: 10vw; /* 10% of the viewport width as left margin */
+            margin-right: 10vw; /* 10% of the viewport width as right margin */
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1em;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #444;
+            color: #fff;
+            padding: 0.5em;
+            text-align: center;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 0 10px;
+        }
+
+        /* Add a class for highlighting */
+        nav a.active {
+            background-color: white;
+            color: #333;
+        }
+
+        section {
+            padding: 1em;
+        }
+
+        article {
+            margin-bottom: 1em;
+        }
+
+        .full-content {
+            display: none;
+        }
+
+        .slideshow-container {
+            max-width: 1000px;
+            position: relative;
+            margin: auto;
+        }
+
+        .mySlides {
+            display: none;
+        }
+
+        .prev, .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            margin-top: -22px;
+            padding: 16px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+        }
+
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+
+        .prev:hover, .next:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        /* Add this to your style section */
+        .read-more {
+            color: #fff;
+            background-color: #444;
+            padding: 5px 10px;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        /* Add a class for highlighting */
+        .read-more:hover {
+            background-color: white;
+            color: #333;
+        }
+
+        footer.highlighted {
+            background-color: #333;
+            color: #fff;
+            padding: 1em;
+            text-align: center;
+        }
     </style>
 </head>
 <body>
@@ -25,30 +125,100 @@
         <article>
             <h2>IS ALAÇATI LOSING IT’S POPULARITY?</h2>
             <p class="summary">
-                Alaçatı, one of Turkey's top vacation destinations, has seen a decrease in the number of domestic tourists due to the recent mafia events and exorbitant price increases.
+                
+            Alaçatı, one of Turkey's top vacation destinations, has seen a decrease in the number of domestic tourists due to the recent mafia events and exorbitant price increases.
             </p>
-            <!-- Full content for the new article -->
-            <!-- ... (content goes here) ... -->
+            <div class="full-content" id="fullContent1">
+                <div class="slideshow-container" id="slideshow1">
+                    <div class="mySlides">
+                        <img src="Göç/göç3.jpg" style="width:100%">
+                    </div>
+
+
+                    <!-- Add more images as needed -->
+
+                    <a class="prev" onclick="plusSlides(-1, 'slideshow1')">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1, 'slideshow1')">&#10095;</a>
+                </div>
+                
+                <p>Alaçatı, one of Turkey's top vacation destinations, has seen a decrease in the number of domestic tourists due to the recent mafia events and exorbitant price increases. 
+
+                    <br>
+                    <br>
+                <br>
+                <br>
+                The recent armed raids on nightclubs and bloody knife fights in Alaçatı disturbed the peace of the town and its local tourists. C.Y., who went to Sole & Mare Beach Clube in Alaçatı with his friends in August last summer and was an eyewitness to the incident. He escaped unharmed from the armed attack on the beach they went to. “I will now remove Alaçatı from the holiday route due to life safety reasons. We were seeing the news on social media, but we never thought it would happen to us," C.Y. said and explained what happened to him. "We went to the beach (Sole & Mare) with our friends, where we always go, everything was normal until the incident happened, at 16:00, while we were packing up, we heard a few gunshots, then shouts escalated. Nobody was hurt, but we were very scared," he said, and added, "The armed attack at the enterance of the beach, which we went to not only in the evening but also in broad daylight, while we were inside, broke our trust in both Alaçatı and the beach. Worse things could have happened to us, but we were lucky."  
+
+ <br>
+                <br>
+                
+                <br>
+                Another reason, exorbitant prices, caused a decline in Alaçatı’s preferability. Alaçatı, which is full every year, seems will be emptier than ever this year, like it was in the summer of 2023. The price increases at the beginning of each season have run off the local tourists. Domestic tourists, who think that the prices will skyrocket with the price hikes at the beginning of the summer, are now planning to make plans abroad rather than resorting to holiday resorts such as Alaçatı and Bodrum. I interviewed one of the domestic tourists who have chose to vacation in Alaçatı or Bodrum before, B.K.  "The cost is almost the same, and yet going abroad seems more attractive. This year, instead of Alaçatı, we will go to Montenegro or Bosnia-Herzegovina,” B.K. said. Another domestic tourist, M.E.G.; "I can always go to Alaçatı, but I can't go to Thailand." "It would be an injustice to myself not to take advantage of this opportunity when the prices are like this," he said. According to the answers we received from the public, this year Alaçatı will be quieter than previous years. <br>
+                <br>
+               
+                </p>
+            </div>
             <a href="#" onclick="toggleContent(this, 'fullContent1', 'slideshow1'); return false;" class="read-more">Read more</a>
         </article>
 
         <article>
-            <h2>ENTHUSIASTIC 100TH ANNIVERSARY CELEBRATION FROM BEŞİKTAŞ RESIDENTS</h2>
+            <h2>ENTHUSIASTIC 100TH ANNIVERSARY CELEBRATION FROM BEŞİKTAŞ RESIDENTS </h2>
             <p class="summary">
-                The Republic of Turkey turned 100 years old on October 29, 2023, and people celebrated it with enthusiasm all over the country. One of the notable locations was Beşiktaş, the beautiful district of Istanbul.
-            </p>
-            <!-- Full content for the new article -->
-            <!-- ... (content goes here) ... -->
+               The Republic of Turkey turned 100 years old on October 29, 2023, and people celebrated it with enthusiasm all over the country. One of the notable locations was Beşiktaş, the beautiful district of Istanbul.
+
+</p>
+            <div class="full-content" id="fullContent2">
+                <div class="slideshow-container" id="slideshow2">
+                    <div class="mySlides">
+                        <img src="Istanbul/img3.jpg" style="width:100%">
+                    </div>
+
+                    <!-- Add more images as needed -->
+
+                    <a class="prev" onclick="plusSlides(-1, 'slideshow2')">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1, 'slideshow2')">&#10095;</a>
+                </div>
+                
+                <p>The Republic of Turkey turned 100 years old on October 29 2023, and people celebrated it with enthusiasm all over the country. One of the notable locations was Beşiktaş, the beautiful district of Istanbul. <br>
+                    <br>
+                    On this special day of the Republic of Turkey, which recently completed its 100th anniversary, Beşiktaş residents participated in an enthusiastic celebration. People gathered at the Beşiktaş shore and watched with great excitement the passage of 100 military ships of the Turkish Naval Forces through the Bosphorus. Then thousands of people went in front of the Dolmabahçe Palace, which was the meeting place for the torchlight parade, sang the Izmir March and the National Anthem with great enthusiasm and while waiting for the parade to start. Torchlight parade, which started at 19.00, lasted approximately for 2 hours, and Beşiktaş residents walked from in front of Dolmabahçe Palace to Ortaköy, with torches and flags in their hands and singing anthems. Finally, the parade ended with Edip Akbayram’s concert organized by Beşiktaş Mayor Rıza Akpolat at 21.00 in Ortaköy Square. </p>
+            </div>
             <a href="#" onclick="toggleContent(this, 'fullContent2', 'slideshow2'); return false;" class="read-more">Read more</a>
         </article>
 
         <article>
-            <h2>EARTQUAKE PANIC IN BEŞİKTAŞ</h2>
+            <h2>EARTQUAKE PANIC IN BEŞİKTAŞ 
+</h2>
             <p class="summary">
-                After the devastating earthquake in Hatay on February 6, 2023, authorities began to take precautions for the expected Istanbul earthquake. One of these was Beşiktaş Municipality.
+               After the devastating earthquake in Hatay on February 6, 2023, authorities began to take precautions for the expected Istanbul earthquake. One of these was Beşiktaş Municipality.
+
+</p>
+            <div class="full-content" id="fullContent3">
+                <div class="slideshow-container" id="slideshow3">
+                    <div class="mySlides">
+                        <img src="Müsilaj/img1.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <img src="Müsilaj/img2.jpg" style="width:100%">
+                    </div>
+
+                    <!-- Add more images as needed -->
+
+                    <a class="prev" onclick="plusSlides(-1, 'slideshow3')">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1, 'slideshow3')">&#10095;</a>
+                </div>
+                
+                <p>  After the devastating earthquake in Hatay on February 6, 2023, authorities began to take precautions for the expected Istanbul earthquake. One of these was Beşiktaş Municipality. 
+<br>
+                    <br>
+                
+                <br>
+               The municipality have prepared a catalog together with TMMOB Chamber of Civil Engineers Istanbul Branch, called 'How to Determine the Earthquake Safety of Buildings?’ and an informative brochure titled "How to Apply to Beşiktaş İmar A.Ş. for Preliminary Evaluation of Buildings?" With Beşiktaş Belediyesi İmar A.Ş. The catalogs were distributed to almost all Beşiktaş residents’ doorsteps, and it informed the residents about  load-bearing columns, their potential of being damaged, and the ongoing strenghtening projects for the buildings. We have asked B.B., a Beşiktaş resident, about her thoughts on the subject. “ The catalog is informative and might be sufficient to educate people. But I don’t consider this catalog as a precaution. The catalog will not help me during a possible earthquake. I wish this subject was taken more seriously and instead of saying “you can get your building checked if you wish” they would actually inspect the buildings and evacuate the damaged ones. It would make us feel much more safe.” B.B. said. The authorities have stated previously that  an earthquake in İstanbul would be much more destructive than the one happened in Hatay. It is understood that the efforts of the Municipality is not satistactionary for some of the residents of Beşiktaş. <br>
+                
             </p>
-            <!-- Full content for the new article -->
-            <!-- ... (content goes here) ... -->
+
+            </div>
             <a href="#" onclick="toggleContent(this, 'fullContent3', 'slideshow3'); return false;" class="read-more">Read more</a>
         </article>
 
@@ -59,9 +229,95 @@
         <p>&copy; 2023 Voice of Freedom. All rights reserved.</p>
     </footer>
 
+
     <script>
-        // Your existing script remains unchanged
-        // ...
+        function plusSlides(n, slideshowId) {
+            showSlides(slideIndex[slideshowId] += n, slideshowId);
+        }
+    
+        function showSlides(n, slideshowId) {
+            var i;
+            var slides = document.getElementById(slideshowId).getElementsByClassName("mySlides");
+            if (n > slides.length) { slideIndex[slideshowId] = 1 }
+            if (n < 1) { slideIndex[slideshowId] = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slides[slideIndex[slideshowId] - 1].style.display = "block";
+        }
+    
+        function toggleContent(link, fullContentId, slideshowId) {
+    var article = link.parentNode;
+    var summary = article.querySelector('.summary');
+    var fullContent = document.getElementById(fullContentId);
+    var footer = document.querySelector('footer');
+
+    // Check if there is any other opened content
+    var openedContent = document.querySelector('.full-content:not([style="display: none;"])');
+    if (openedContent && openedContent !== fullContent) {
+        var openedLink = openedContent.previousElementSibling;
+        var openedArticle = openedLink.parentNode;
+        var openedSummary = openedArticle.querySelector('.summary');
+
+        // Close the previously opened content
+        openedSummary.style.display = 'block';
+        openedContent.style.display = 'none';
+        openedLink.innerHTML = 'Read more';
+        openedArticle.classList.remove('highlighted');
+        // Check if other articles are expanded before removing the 'highlighted' class
+        var isAnyArticleExpanded = document.querySelector('.full-content:not([style="display: none;"])');
+        if (!isAnyArticleExpanded) {
+            footer.classList.remove('highlighted'); // Remove the highlight from the footer
+        }
+    }
+
+    if (summary.style.display !== 'none') {
+        summary.style.display = 'none';
+        fullContent.style.display = 'block';
+        showSlides(slideIndex[slideshowId], slideshowId);
+        link.innerHTML = 'Read less';
+        article.classList.add('highlighted');
+        footer.classList.add('highlighted'); // Add this line to highlight the footer
+
+        // Scroll to the expanded article
+        article.scrollIntoView({ behavior: 'smooth' });
+    } else {
+        summary.style.display = 'block';
+        fullContent.style.display = 'none';
+        link.innerHTML = 'Read more';
+        article.classList.remove('highlighted');
+        // Check if other articles are expanded before removing the 'highlighted' class
+        var isAnyArticleExpanded = document.querySelector('.full-content:not([style="display: none;"])');
+        if (!isAnyArticleExpanded) {
+            footer.classList.remove('highlighted'); // Remove the highlight from the footer
+        }
+    }
+}
+
+        // Initialize slideIndex as an object to hold separate indices for each slideshow
+        var slideIndex = {};
+        slideIndex['slideshow1'] = 1;
+        slideIndex['slideshow2'] = 1;
+        slideIndex['slideshow3'] = 1;
+    
+        // Initial showSlides call to display the first slide in each slideshow
+        showSlides(slideIndex['slideshow1'], 'slideshow1');
+        showSlides(slideIndex['slideshow2'], 'slideshow2');
+        showSlides(slideIndex['slideshow3'], 'slideshow3');
+
+        // Get the current page URL
+        var currentPage = window.location.href;
+
+        // Get all navigation links
+        var navLinks = document.querySelectorAll('nav a');
+
+        // Loop through each link and check if its href matches the current page URL
+        navLinks.forEach(function(link) {
+            if (link.href === currentPage) {
+                // If there is a match, add the 'active' class to highlight the link
+                link.classList.add('active');
+            }
+        });
     </script>
 </body>
 </html>
